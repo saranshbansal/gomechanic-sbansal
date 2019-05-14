@@ -38,9 +38,11 @@ public class CoPrimePairs
 
         Long count = 0l;
         for (int i = 0; i < n - 1; i++)
-            for (int j = i + 1; j < n; j++)
-                if (coprime(arr[i], arr[j]))
+            for (int j = i; j < n; j++)
+                if (coprime(arr[i], arr[j])) {                    
+                    System.out.println("(" + arr[i] + ", " + arr[j] + ")");
                     count++;
+                }
 
         return count;
     }
@@ -62,7 +64,7 @@ public class CoPrimePairs
     {
         Long m = 1000000007l;
 
-        Long result = saveBatman(2, 10);
+        Long result = saveBatman(2, 3);
         Long modResult = (result % m + m) % m;
 
         System.out.println(modResult);
