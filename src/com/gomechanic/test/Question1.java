@@ -2,7 +2,7 @@ package com.gomechanic.test;
 
 import java.util.Arrays;
 
-public class RollCall
+public class Question1
 {
 
     public static void print(int studentsCount, int[] rollCallList)
@@ -39,6 +39,6 @@ public class RollCall
 
     public static void main(String[] args)
     {
-        RollCall.print(12, new int[] {2, 5});
+        Question1.print(12, new int[] {2, 5});
     }
 }

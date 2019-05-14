@@ -2,7 +2,7 @@ package com.gomechanic.test;
 
 import java.io.IOException;
 
-public class CoPrimePairs
+public class Question2
 {
 
     // return gcd of a and b 
